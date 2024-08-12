@@ -1,0 +1,309 @@
+.sign-up-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.sign-up-first a{
+   
+    padding-top: 8px;
+    padding-bottom: 8px;    
+    font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        margin: 0px;
+        text-decoration: none;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    color: rgb(33, 100, 217);
+    display: flex;
+    flex: 2 1 0%;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    background-color: rgb(249, 250, 251);
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(209, 213, 219);
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+}
+.sign-up-first a:hover{
+    background-color:rgb(243, 244, 246);
+}
+.sign-up-first h4{
+    text-align: center;
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+        font-family: "Roboto";
+        color: rgb(31, 41, 55);
+        margin: 0;
+}
+.sign-up-first{
+ width: 100%;
+ display: flex;
+ flex-direction: row;
+ gap: 12px;
+}
+.sign-up-main{
+    display: flex;
+        width: 100%;
+        max-width: 520px;
+       
+        margin: auto;
+        flex-direction: column;
+        flex: 1 1 0%;
+        gap: 16px;
+        font-family: "Roboto";
+     
+    
+ 
+}
+.sign-up-line{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(229, 231, 235);
+    height: 1px;
+    width: 100%;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;    
+}
+.sign-up-line div{
+    background-color: white;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.sign-up-line div p{
+    font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.25px;
+        margin: 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: rgb(107, 114, 128);
+}
+.sign-up-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.sign-up-input-group{
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    min-width: 0px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    vertical-align: top;
+    width: 100%;
+}
+.sign-up-input-group label{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    letter-spacing: 0.25px;   
+    color: rgb(107, 114, 128);  
+    margin-bottom: 4px;
+}
+.sign-up-input-group input{
+    min-height: auto !important;
+height: auto !important;
+    padding: 8px 12px !important;
+    border: none !important;
+    outline: none !important;
+    color: #000 !important;
+    background-color: rgb(255, 255, 255) !important;
+    border-radius: 4px !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    border: 1px solid rgb(209, 213, 219) !important;
+}
+.sign-up-input-group input:focus{
+    border: 1px solid#4d5d7f !important;
+}
+.sign-up-input-group input::placeholder{
+    color: rgb(209, 213, 219)
+    ;font-size: 14px;
+}
+
+.middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/* Container for the dropdown */
+.dropbtn {
+    background-color: rgb(243, 244, 246);
+    color: rgb(95, 97, 100);
+    padding: 16px;
+    height: 38px;
+    font-size: 15px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100px; /* Adjust as needed */
+}
+
+/* Container for the dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    z-index: 100 !important;
+    height: 300px;
+    overflow: auto;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px; /* Adjust as needed */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 4px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+
+/* On hover, add a background color */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown content on hover */
+
+
+/* Style for the dropdown button when hovered */
+.dropdown:hover .dropbtn {
+    background-color: #f1f1f1;
+}
+
+/* Flag styling */
+.dropdown-content img {
+    margin-right: 8px;
+    width: 20px;
+    height: auto;
+}
+
+/* Dropdown icon styling */
+.dropbtn .dropdown-icon {
+    font-size: 18px;
+    margin-left: 10px;
+}
+.dropdown i{
+    font-size: 12px;
+    color: rgb(116, 119, 122)
+}
+.sign-up-btn{
+    border-radius: 4px;
+    font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        height: 40px;
+    padding: 5px 16px;
+    opacity: 0.5;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background-color:#4d5d7f;
+    border: 1px solid #4d5d7f;
+    transition: all 200ms ease-in-out;
+}
+.sign-up-text p {
+font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        color: rgba(0, 0, 0, 0.87);
+}
+.sign-up-text{
+    margin-top: 12px;
+}
+#sign-up-pass{
+    height: 38px !important;
+width: 100% !important;
+
+border: none !important;
+}
+.sign-up-checkbox label{
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+    margin-right: 16px;
+    margin-left: -8px;
+}
+.sign-up-checkbox span{
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    outline: 0px;
+    border: 0px;
+    margin: 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    border-radius: 50%;
+    padding: 8px;
+    font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+}
+.sign-up-checkbox span input{
+    width: 16px;
+    height: 16px;
+    
+}
+.sign-up-checkbox a{
+    font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        text-decoration: none;
+        color: rgb(33, 100, 217);
+}
+
+@media only screen and (min-width:300px) and (max-width:550px){
+    .sign-up-main{
+        padding: 32px 0px !important;
+    }
+   
+}
+
