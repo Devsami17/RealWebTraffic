@@ -1,6 +1,6 @@
 const rangeSlider = document.getElementById("priceRange"),
     selectedAmount = document.getElementById("selectedAmount"),
-    amounts = ['5,000', '10,000', '15,000', '20,000', '25,000', '30,000', '35,000','40,000','45,000','50,000','75,000','100,000'],
+    amounts = ['100', '200', '500', '1,000', '2,000', '5,000','10,000','15,000','20,000','50,000','100,000','200,000'],
     rangeTicksContainer = document.querySelector(".range-ticks");
 
 // Initialize the range slider
@@ -20,50 +20,50 @@ rangeSlider.addEventListener("input", function() {
     selectedAmount.textContent = `${amounts[e]} - Amount Of Traffic`;
 
     // Set pricing amount based on selected amount
-    if (amounts[e] === '5,000') {
-        document.getElementById("pricing-amount").innerHTML = '$16.70';
-    }else if(amounts[e] === '10,000'){
+    if (amounts[e] === '100') {
+        document.getElementById("pricing-amount").innerHTML = '$5.00';
+    }else if(amounts[e] === '200'){
         var a = 16.70*2;
-        document.getElementById("pricing-amount").innerHTML = `$33.40`;
-    }else if(amounts[e] === '15,000'){
+        document.getElementById("pricing-amount").innerHTML = `$10.00`;
+    }else if(amounts[e] === '500'){
         var a = 16.70*3;
         document.getElementById("pricing-amount").innerHTML = `$50.10`;
     }
-    else if(amounts[e] === '20,000'){
+    else if(amounts[e] === '1,000'){
         var a = 16.70*4;
-        document.getElementById("pricing-amount").innerHTML = `$66.80`;
+        document.getElementById("pricing-amount").innerHTML = `$22.50`;
     }
-    else if(amounts[e] === '25,000'){
+    else if(amounts[e] === '2,000'){
         var a = 16.70*5;
-        document.getElementById("pricing-amount").innerHTML = `$83.50`;
+        document.getElementById("pricing-amount").innerHTML = `$40.00`;
     }
-    else if(amounts[e] === '30,000'){
+    else if(amounts[e] === '5,000'){
         var a = 16.70*6;
-        document.getElementById("pricing-amount").innerHTML = `$100.00`;
+        document.getElementById("pricing-amount").innerHTML = `$75.00`;
     }
-    else if(amounts[e] === '35,000'){
+    else if(amounts[e] === '10,000'){
         var a = 16.70*7;
-        document.getElementById("pricing-amount").innerHTML = `$116.00`;
+        document.getElementById("pricing-amount").innerHTML = `$150.00`;
     }
-    else if(amounts[e] === '40,000'){
+    else if(amounts[e] === '15,000'){
         var a = 16.70*7;
-        document.getElementById("pricing-amount").innerHTML = `$133.60`;
+        document.getElementById("pricing-amount").innerHTML = `$220.10`;
     }
-    else if(amounts[e] === '45,000'){
+    else if(amounts[e] === '20,000'){
         var a = 16.70*7;
-        document.getElementById("pricing-amount").innerHTML = `$150.30`;
+        document.getElementById("pricing-amount").innerHTML = `$290.80`;
     }
     else if(amounts[e] === '50,000'){
         var a = 16.70*7;
-        document.getElementById("pricing-amount").innerHTML = `$167.00`;
-    }
-    else if(amounts[e] === '75,000'){
-        var a = 16.70*7;
-        document.getElementById("pricing-amount").innerHTML = `$250.00`;
+        document.getElementById("pricing-amount").innerHTML = `$650.00`;
     }
     else if(amounts[e] === '100,000'){
         var a = 16.70*7;
-        document.getElementById("pricing-amount").innerHTML = `$325.50`;
+        document.getElementById("pricing-amount").innerHTML = `$700.20`;
+    }
+    else if(amounts[e] === '200,000'){
+        var a = 16.70*7;
+        document.getElementById("pricing-amount").innerHTML = `$1400.00`;
     }
      else {
         document.getElementById("pricing-amount").innerHTML = `${amounts[e]}`;
