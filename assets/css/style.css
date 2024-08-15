@@ -11,10 +11,14 @@
 --------------------------------------------------------------*/
 :root {
   scroll-behavior: smooth;
+  --main-color : #222FB9;
+  --sec-color:#1D289C;
+  --third-color:#505BC7;
+  --four : #1B7AD9;
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "inter", sans-serif;
   background: #f6f9ff;
   color: #444444;
 }
@@ -64,7 +68,7 @@ h6 {
   font-size: 24px;
   margin-bottom: 0;
   font-weight: 600;
-  color: #012970;
+  color: var(--four);
 }
 
 /*--------------------------------------------------------------
@@ -377,11 +381,12 @@ h6 {
 }
 
 .header {
+  backdrop-filter: blur(50px);
   transition: all 0.5s;
-  z-index: 997;
+  z-index: 990;
   height: 60px;
   box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
-  background-color: #fff;
+  background-color: transparent;
   padding-left: 20px;
   /* Toggle Sidebar Button */
   /* Search Bar */
@@ -599,18 +604,20 @@ h6 {
 --------------------------------------------------------------*/
 .sidebar {
   position: fixed;
-  top: 60px;
+  top: 0;
+
+  height: auto;
   left: 0;
   bottom: 0;
   width: 300px;
   z-index: 996;
   transition: all 0.3s;
-  padding: 20px;
+  padding: 20px 5px;
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: #aab7cf transparent;
   box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1);
-  background-color: #fff;
+  background-color: #222FB9;
 }
 
 @media (max-width: 1199px) {
@@ -668,7 +675,7 @@ h6 {
 }
 
 .sidebar-nav .nav-item {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 .sidebar-nav .nav-heading {
@@ -682,37 +689,45 @@ h6 {
 .sidebar-nav .nav-link {
   display: flex;
   align-items: center;
-  font-size: 15px;
-  font-weight: 600;
-  color: #4154f1;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Inter";
+  color: #fff;
   transition: 0.3;
-  background: #f6f9ff;
+  background: #505bc7;
   padding: 10px 15px;
+  border-left: 3px solid #fff;
   border-radius: 4px;
 }
-
+.bi-chevron-down{
+  font-size: 14px
+  ;
+  color: #d9d9d9;
+}
 .sidebar-nav .nav-link i {
   font-size: 16px;
   margin-right: 10px;
-  color: #4154f1;
+  color: #fff;
 }
 
 .sidebar-nav .nav-link.collapsed {
-  color: #012970;
-  background: #fff;
+  color:#fff;
+  background: transparent;
+  border: none;
 }
 
 .sidebar-nav .nav-link.collapsed i {
-  color: #899bbd;
+  color: #fff;
 }
 
 .sidebar-nav .nav-link:hover {
-  color: #4154f1;
-  background: #f6f9ff;
+  color: #fff;
+  background: var(--third-color);
+  border-left: 3px solid #fff ;
 }
 
 .sidebar-nav .nav-link:hover i {
-  color: #4154f1;
+  color: #fff;
 }
 
 .sidebar-nav .nav-link .bi-chevron-down {
@@ -728,16 +743,17 @@ h6 {
   padding: 5px 0 0 0;
   margin: 0;
   list-style: none;
+  background-color: var(--sec-color);
 }
 
 .sidebar-nav .nav-content a {
   display: flex;
   align-items: center;
-  font-size: 14px;
-  font-weight: 600;
-  color: #012970;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
   transition: 0.3;
-  padding: 10px 0 10px 40px;
+  padding: 13px 0 15px 40px;
   transition: 0.3s;
 }
 
@@ -750,11 +766,11 @@ h6 {
 
 .sidebar-nav .nav-content a:hover,
 .sidebar-nav .nav-content a.active {
-  color: #4154f1;
+  color: #000;
 }
 
 .sidebar-nav .nav-content a.active i {
-  background-color: #4154f1;
+  background-color: #000;
 }
 
 /*--------------------------------------------------------------
@@ -1230,4 +1246,55 @@ h6 {
   text-align: center;
   font-size: 13px;
   color: #012970;
+}
+.sidebar-sec{
+  color: #fff;
+  padding: 20px 10px;
+  border-top: 1px solid rgba(255, 255, 255, .2);
+  border-bottom: 1px solid rgba(255, 255, 255, .2);
+position: absolute;
+top: 70%;
+width:95%;
+}
+.sidebar-email {
+  display: inline-block;
+  max-width: 190px; /* Adjust the width as needed */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: bottom;
+}
+.sidebar-third{
+  color: #fff;
+  padding: 20px 10px;
+
+position: absolute;
+top: 86%;
+width:95%;
+}
+.pause-btn{
+  color: #1c7ee0 !important;
+    background: 0 0 !important;
+    border: 1px solid #1c7ee0 !important;
+    outline: none;
+    padding: 0 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 0 12px;
+    height: 36px;
+    margin-top: 15px;
+}
+.date-input-group input{
+
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1;
+    color: #1f293b;
+    text-align: left;
+    border-radius: 5px;
+    height: 36px;
+    width: 113px;
+    padding: 10px 14px;
+    border: 1px solid #a0bbea;
 }

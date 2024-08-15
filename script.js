@@ -6,3 +6,9 @@ document.getElementById('hamburger').addEventListener('click',function(){
     a.style.display='flex'
    }
 })
+function preview() {
+   const image = document.getElementById('preview-image');
+
+   // Increase the width smoothly
+   image.style.width = '100%';
+}

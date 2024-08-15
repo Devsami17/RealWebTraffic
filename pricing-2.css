@@ -51,8 +51,8 @@
 
 .tabs-content {
     display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
+    
+    gap: 15px;
     justify-content: center;
     position: relative;
     width: 100%;
@@ -73,7 +73,7 @@
 }
 
 .pricing-card {
-    min-height: 330px;
+    min-height: 300px;
     background: var(--marketing-white, #fff);
     color: #000;
     gap: 32px;
@@ -93,7 +93,7 @@
     color: var(--main);
     margin-bottom: 4px;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 700;
     font-family: var(--para)
 }
 
@@ -135,7 +135,13 @@
     box-sizing: border-box;
     align-items: center
 }
-
+.pricing-card button.active{
+    background-color: #fff;
+    
+}
+.pricing-card button.active span {
+    color: var(--main);
+}
 .pricing-card button span {
     padding: 0 16px;
     overflow: hidden;
@@ -143,7 +149,7 @@
     white-space: nowrap;
     font-size: 18px;
     font-family: var(--para);
-    font-weight: 400;
+    font-weight: 500;
     color: #fff
 }
 
@@ -159,7 +165,7 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 24px;
-    gap: 48px
+    gap: 30px
 }
 
 .pricing-features-content {
@@ -209,6 +215,3 @@
     margin-left: 8px
 }
 
-.tabs-content-main .pricing-card-main {
-    display: none
-}
