@@ -1556,3 +1556,11 @@ td{
   color: #1c7ee0;
   cursor: pointer;
 }
+@media only screen and (min-width:300px) and (max-width:600px){
+  .Subscription-text{
+    width: 100%;
+  }
+  .offer-card p {
+    font-size: 14px !important;
+  }
+}
