@@ -5,10 +5,13 @@ document.getElementById('hamburger').addEventListener('click',function(){
    }else{
     a.style.display='flex'
    }
-})
-function preview() {
+});
+document.getElementById('form').addEventListener('submit', function(event) {
+   event.preventDefault(); // Prevent the form from submitting and reloading the page
+
    const image = document.getElementById('preview-image');
 
    // Increase the width smoothly
    image.style.width = '100%';
-}
+
+});

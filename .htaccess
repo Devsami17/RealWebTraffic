@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Check if the requested URL is not a file or directory
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Rewrite the URL to add .html extension
+RewriteRule ^(.*)$ $1.html [L]

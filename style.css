@@ -293,12 +293,9 @@ color: #000;
     }
 }
 .preview-image {
-    height: 275px;
+    height: auto;
    width: 409px;
     transition: all 1.5s ease-in-out; /* Smooth transition for width change */
 }
 
-.preview-large-image {
-    width: 100%; /* Final width */
-    height: 275px;
-}
+

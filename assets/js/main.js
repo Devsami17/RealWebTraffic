@@ -317,3 +317,15 @@
   }
 
 })();
+const slider = document.getElementById('myRange');
+const sliderValue = document.getElementById('sliderValue');
+
+slider.addEventListener('input', function() {
+    sliderValue.textContent = `${slider.value}%`;
+});
+const slider2 = document.getElementById('myRange2');
+const sliderValue2 = document.getElementById('sliderValue2');
+
+slider2.addEventListener('input', function() {
+    sliderValue2.textContent = `${slider2.value}%`;
+});
