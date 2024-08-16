@@ -49,6 +49,9 @@ a:hover {
   .header{
     background-color: #fff !important;
   }
+  .buy-credits{
+    overflow: hidden;
+  }
 }
 h1,
 h2,
