@@ -61,7 +61,67 @@
             </div>
         </header>
         <main>
-            <section class=" section-1  ">
+         
+            <section class=" section-1 position-relative ">
+                <div class="additonal-customization-box">
+                    <h6 class="fw-bold text-center mb-4" style="font-size: 16px;">Register For Additional Customization</h6>
+                    <div>
+                        <div class="input-box">
+                            <label for="">Daily Traffic:</label>
+                            <input type="number" value="200">
+                        </div>
+                        <div class="peek-start">
+    <p class="fw-bold" style="font-size: 14px;">Peak Start Time:</p>
+    <div class="input-box">
+        <label for="">Time Zone</label>
+        <input type="text" value="EST">
+    </div>
+    <div class="input-box mt-2">
+        <label for="">Peak Time %</label>
+        <input type="number" value="65">
+    </div>
+    <div class="input-box mt-2">
+        <label for="">+/- Start Time Minutes</label>
+        <input type="time"  value="12:00">
+    </div>
+    <div class="input-box mt-2">
+        <label for="">+/- End Time Minutes</label>
+        <input type="time" value="12:00">
+    </div>
+    
+                        </div>
+                        <div class="input-box">
+                            <label for="">Desktop Ratio %</label>
+                            <input type="number" value="70">
+                        </div>
+                        <div class="input-box mt-2">
+                            <label for="">Mobile Ratio %</label>
+                            <input type="number" value="30">
+                        </div>
+    <p class="fw-bold mt-2" style="font-size: 14px;">Browser Ratio :</p>
+    <div class="input-box mt-2">
+        <label for="">Google %</label>
+        <input type="number" readonly value="60">
+    </div>
+    <div class="input-box mt-2">
+        <label for="">Yahoo %</label>
+        <input type="number" value="10">
+    </div>
+    <div class="input-box mt-2">
+        <label for="">Bing %</label>
+        <input type="number" value="10">
+    </div>
+    <div class="input-box mt-2">
+        <label for="">Duckduckgo.com %</label>
+        <input type="number" value="10">
+    </div>
+    <div class="input-box mt-4">
+        <label for="">Direct Visitors %</label>
+        <input type="number" value="10">
+    </div>
+    
+                    </div>
+                </div>
                 <div class="container d-flex flex-wrap justify-content-between align-items-baseline">
                 <div class="col-lg-5 col-12 col-sm-12 col-md-12">
                     <h1>Buy Real Web Traffic</h1>
@@ -85,7 +145,8 @@
             <p>The Lowest Price Guarantee: We match any price!</p>
             
             </div>
-                <div class="col-lg-6  col-12 col-sm-12 col-md-12">
+                <div class="col-lg-6  col-12 col-sm-12 col-md-12 ">
+                
                     <div class="main-form">
                         <h2 class="text-center">Sample Our Real Website Traffic</h2>
                     <p class="text-center">Enter your detail below and start your preview.</p>
@@ -102,9 +163,10 @@
     <label for="">Satisfaction Guarantee: 100% Refund in the first seven days and you keep the delivered traffic.</label>
 <input type="url" required placeholder="Inner Page URL">
 </div>
-<div class="input-box mt-3 w-100 flex-wrap justify-content-end">
+<div class="input-box mt-3 w-100 flex-wrap justify-content-between">
  <!-- <button >Preview with all features</button> -->
  <button type="submit" class="start">Start Preview</button>
+ <button type="button" class="additonal-customization">Additional Customization&nbsp;<i class="bi bi-caret-down-fill"></i></button>
 </div>
 
                 </form> 
@@ -514,7 +576,37 @@ Is it safe? Do you guarantee results?
         </div>
         </footer>
         <!-- Bootstrap JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="script.js">
+        
+
+        </script>
+        <script>
+             $(document).ready(function(){
+            $('.additonal-customization').click(function(){
+                $('.additonal-customization-box').toggle(20);
+            });
+        });
+            document.getElementById('form').addEventListener('input', function() {
+    // Sabhi input fields ko retrieve karo
+    const inputs = document.querySelectorAll('#form input');
+    
+    // Check karo agar koi bhi field empty hai
+    let allFilled = true;
+    inputs.forEach(input => {
+        if (input.value === '') {
+            allFilled = false;
+        }
+    });
+
+    // Agar sab fields filled hain toh button ka color red karo
+    const startButton = document.querySelector('.start');
+    if (allFilled) {
+        startButton.style.backgroundColor = 'var(--second)';
+    } else {
+        startButton.style.backgroundColor = '#85a1bc'; // Default color reset kar do
+    }
+});
 
         </script>
         <script src="pricing.js"></script>

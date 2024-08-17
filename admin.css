@@ -1,0 +1,60 @@
+main{
+font-family: "Raleway";
+background-color: #66968A;
+margin-top: 61px;
+height: fit-content;
+padding-bottom: 100px;
+padding-top: 10px;
+}
+label{
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+.input-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 20px;
+}
+.input-box input{
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    font-weight: 400;
+    font-family: "Poppins";
+    width: 95px;
+    text-align: right;
+    font-size: 14px;
+}
+.green{
+    background-color: #55A697;
+    padding: 10px 2px;
+}
+input[type='checkbox']{
+    height: 15px;
+    width: 15px;
+}
+.Analytics{
+    width: 130px !important;
+    padding-right: 8px;
+}
+button{
+    background-color: #3174B2;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px 30px;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 6px;
+    width: 250px;
+}
+@media only screen and (min-width:300px) and (max-width:550px) {
+    
+    .sidebar img{
+        height: 50px;
+        margin-top: 60px !important;
+        margin-bottom: 0px !important;
+    }
+}
