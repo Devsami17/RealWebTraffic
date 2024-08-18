@@ -58,3 +58,13 @@ button{
         margin-bottom: 0px !important;
     }
 }
+.sidebar{
+    background-color: #fff !important;
+ 
+}
+.sidebar-nav .nav-link {
+    background:  #3174B2 !important;
+}
+.header{
+    background-color: #fff !important;
+}
