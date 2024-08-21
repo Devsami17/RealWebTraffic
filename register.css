@@ -1,9 +1,4 @@
-.sign-up-container{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
+
 .sign-up-first a{
    
     padding-top: 8px;
@@ -55,7 +50,7 @@
     display: flex;
         width: 100%;
         max-width: 520px;
-       
+       margin-top: 80px !important;
         margin: auto;
         flex-direction: column;
         flex: 1 1 0%;
@@ -138,14 +133,7 @@ height: auto !important;
     ;font-size: 14px;
 }
 
-.middle{
-    position: absolute;
-    width: 100%;
-    padding: 0px 20px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
+
 /* Container for the dropdown */
 .dropbtn {
     background-color: rgb(243, 244, 246);
@@ -306,6 +294,9 @@ border: none !important;
     .sign-up-main{
         padding: 32px 0px !important;
     }
-   
+
+   .sign-up-main{
+    margin-top: 40px !important;
+   }
 }
 

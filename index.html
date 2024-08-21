@@ -588,10 +588,10 @@ Is it safe? Do you guarantee results?
             });
         });
             document.getElementById('form').addEventListener('input', function() {
-    // Sabhi input fields ko retrieve karo
+ 
     const inputs = document.querySelectorAll('#form input');
     
-    // Check karo agar koi bhi field empty hai
+ 
     let allFilled = true;
     inputs.forEach(input => {
         if (input.value === '') {
@@ -599,14 +599,15 @@ Is it safe? Do you guarantee results?
         }
     });
 
-    // Agar sab fields filled hain toh button ka color red karo
+   
     const startButton = document.querySelector('.start');
     if (allFilled) {
         startButton.style.backgroundColor = 'var(--second)';
     } else {
-        startButton.style.backgroundColor = '#85a1bc'; // Default color reset kar do
+        startButton.style.backgroundColor = '#85a1bc'; 
     }
 });
+
 
         </script>
         <script src="pricing.js"></script>

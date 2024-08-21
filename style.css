@@ -140,6 +140,12 @@ transition: 0.5s ease-in-out;
 }
 .header-2{display: none;}
 @media Only screen and (min-width:300px) and (max-width:1199px){
+    .responsive-header ul{
+        padding-left: 10px !important;
+    }
+    header button{
+        border: 1px solid  #fff !important; 
+    }
     .header-1{
         display: none !important;
     }
@@ -157,7 +163,8 @@ transition: 0.5s ease-in-out;
         padding: 15px;
         background-color: var(--second);
 position: absolute;
-top: 80px;
+top: 60px;
+z-index: 1;
 width: 100%;
         
     }
@@ -167,7 +174,7 @@ width: 100%;
     }
 }
 .responsive-header{
-    display: none;
+    display: none ;
   
 
 }
